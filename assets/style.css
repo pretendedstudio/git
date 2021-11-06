@@ -54,6 +54,14 @@ padding: 0;
   color:#008b8b;
 }
 
+.l-p {
+  color:#008b8b;
+}
+
+.l-p a:hover {
+  color:#333;
+}
+
 .f-h {
   font-size: 1.75em;
 }
