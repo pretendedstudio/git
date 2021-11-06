@@ -95,6 +95,15 @@ article .header {
   color: #333;
   background-color: rgba(255, 255, 255, 0.75);
 }
+.pg {
+  margin: -15em 0 0 0;
+}
+.f1 {
+  font-size: .8em;
+}
+.fp {
+  font-size: .5em;
+}
 article h1, article h2 {
   margin: 0 0 0.333em;
 }
