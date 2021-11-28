@@ -1,378 +1,23 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+<title>W3.CSS Template</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css">
-<body>
 <style>
-/* W3.CSS 3.04 Apr 2017 by Jan Egil and Borge Refsnes */
-html{box-sizing:border-box}*,*:before,*:after{box-sizing:inherit}
-/* Extract from normalize.css by Nicolas Gallagher and Jonathan Neal git.io/normalize */
-html{-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0}
-article,aside,details,figcaption,figure,footer,header,main,menu,nav,section,summary{display:block}
-audio,canvas,progress,video{display:inline-block}progress{vertical-align:baseline}
-audio:not([controls]){display:none;height:0}[hidden],template{display:none}
-a{background-color:transparent;-webkit-text-decoration-skip:objects}
-a:active,a:hover{outline-width:0}abbr[title]{border-bottom:none;text-decoration:underline;text-decoration:underline dotted}
-dfn{font-style:italic}mark{background:#ff0;color:#000}
-small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}
-sub{bottom:-0.25em}sup{top:-0.5em}figure{margin:1em 40px}
-img{border-style:none}svg:not(:root){overflow:hidden}
-code,kbd,pre,samp{font-family:monospace,monospace;font-size:1em}
-hr{box-sizing:content-box;height:0;overflow:visible}
-button,input,select,textarea{font:inherit;margin:0}optgroup{font-weight:bold}
-button,input{overflow:visible}button,select{text-transform:none}
-button,html [type=button],[type=reset],[type=submit]{-webkit-appearance:button}
-button::-moz-focus-inner, [type=button]::-moz-focus-inner, [type=reset]::-moz-focus-inner, [type=submit]::-moz-focus-inner{border-style:none;padding:0}
-button:-moz-focusring, [type=button]:-moz-focusring, [type=reset]:-moz-focusring, [type=submit]:-moz-focusring{outline:1px dotted ButtonText}
-fieldset{border:1px solid #c0c0c0;margin:0 2px;padding:.35em .625em .75em}
-legend{color:inherit;display:table;max-width:100%;padding:0;white-space:normal}textarea{overflow:auto}
-[type=checkbox],[type=radio]{padding:0}
-[type=number]::-webkit-inner-spin-button,[type=number]::-webkit-outer-spin-button{height:auto}
-[type=search]{-webkit-appearance:textfield;outline-offset:-2px}
-[type=search]::-webkit-search-cancel-button,[type=search]::-webkit-search-decoration{-webkit-appearance:none}
-::-webkit-input-placeholder{color:inherit;opacity:0.54}
-::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}
-/* End extract */
-html,body{font-family:Verdana,sans-serif;font-size:15px;line-height:1.5}html{overflow-x:hidden}
-h1,h2,h3,h4,h5,h6,.slim,.wide{font-family:"Segoe UI",Arial,sans-serif}
-h1{font-size:36px}h2{font-size:30px}h3{font-size:24px}h4{font-size:20px}h5{font-size:18px}h6{font-size:16px}
-.serif{font-family:"Times New Roman",Times,serif}
-h1,h2,h3,h4,h5,h6{font-weight:400;margin:10px 0}.wide{letter-spacing:4px}
-h1 a,h2 a,h3 a,h4 a,h5 a,h6 a{font-weight:inherit}
-hr{border:0;border-top:1px solid #eee;margin:20px 0}
-img{margin-bottom:-5px}a{color:inherit}
-.image{max-width:100%;height:auto}
-.table,.table-all{border-collapse:collapse;border-spacing:0;width:100%;display:table}
-.table-all{border:1px solid #ccc}
-.bordered tr,.table-all tr{border-bottom:1px solid #ddd}
-.striped tbody tr:nth-child(even){background-color:#f1f1f1}
-.table-all tr:nth-child(odd){background-color:#fff}
-.table-all tr:nth-child(even){background-color:#f1f1f1}
-.hoverable tbody tr:hover,.ul.hoverable li:hover{background-color:#ccc}
-.centered tr th,.centered tr td{text-align:center}
-.table td,.table th,.table-all td,.table-all th{padding:8px 8px;display:table-cell;text-align:left;vertical-align:top}
-.table th:first-child,.table td:first-child,.table-all th:first-child,.table-all td:first-child{padding-left:16px}
-.btn,.btn-block,.button{border:none;display:inline-block;outline:0;padding:6px 16px;vertical-align:middle;overflow:hidden;text-decoration:none!important;color:#fff;background-color:#000;text-align:center;cursor:pointer;white-space:nowrap}
-.btn:hover,.btn-block:hover,.btn-floating:hover,.btn-floating-large:hover{box-shadow:0 8px 16px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19)}
-.button{color:#000;background-color:#f1f1f1;padding:8px 16px}.button:hover{color:#000!important;background-color:#ccc!important}
-.btn,.btn-floating,.btn-floating-large,.closenav,.opennav,.btn-block,.button{-webkit-touch-callout:none;-webkit-user-select:none;-khtml-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none}   
-.btn-floating,.btn-floating-large{display:inline-block;text-align:center;color:#fff;background-color:#000;position:relative;overflow:hidden;z-index:1;padding:0;border-radius:50%;cursor:pointer;font-size:24px}
-.btn-floating{width:40px;height:40px;line-height:40px}.btn-floating-large{width:56px;height:56px;line-height:56px}
-.disabled,.btn:disabled,.button:disabled,.btn-floating:disabled,.btn-floating-large:disabled{cursor:not-allowed;opacity:0.3}.disabled *,:disabled *{pointer-events:none}
-.btn.disabled:hover,.btn-block.disabled:hover,.btn:disabled:hover,.btn-floating.disabled:hover,.btn-floating:disabled:hover,
-.btn-floating-large.disabled:hover,.btn-floating-large:disabled:hover{box-shadow:none}
-.btn-group .btn{float:left}.btn-block{width:100%}
-.btn-bar .btn{box-shadow:none;background-color:inherit;color:inherit;float:left}.btn-bar .btn:hover{background-color:#ccc}
-.badge,.tag,.sign{background-color:#000;color:#fff;display:inline-block;padding-left:8px;padding-right:8px;text-align:center}
-.badge{border-radius:50%}
-ul.ul{list-style-type:none;padding:0;margin:0}ul.ul li{padding:8px 16px;border-bottom:1px solid #ddd}ul.ul li:last-child{border-bottom:none}
-.tooltip,.display-container{position:relative}.tooltip .text{display:none}.tooltip:hover .text{display:inline-block}
-.navbar{list-style-type:none;margin:0;padding:0;overflow:hidden}
-.navbar li{float:left}.navbar li a,.navitem,.navbar li .btn,.navbar li .input{display:block;padding:8px 16px}.navbar li .btn,.navbar li .input{border:none;outline:none;width:100%}
-.navbar li a:hover{color:#000;background-color:#ccc}
-.navbar .dropdown-hover,.navbar .dropdown-click{position:static}
-.navbar .dropdown-hover:hover,.navbar .dropdown-hover:first-child,.navbar .dropdown-click:hover{background-color:#ccc;color:#000}
-.navbar a,.topnav a,.sidenav a,.dropdown-content a,.accordion-content a,.dropnav a,.navblock a{text-decoration:none!important}
-.navbar .opennav.right{float:right!important}.topnav{padding:8px 8px}
-.navblock .dropdown-hover:hover,.navblock .dropdown-hover:first-child,.navblock .dropdown-click:hover{background-color:#ccc;color:#000}
-.navblock .dropdown-hover,.navblock .dropdown-click{width:100%}.navblock .dropdown-hover .dropdown-content,.navblock .dropdown-click .dropdown-content{min-width:100%}
-.topnav a{padding:0 8px;border-bottom:3px solid transparent;-webkit-transition:border-bottom .25s;transition:border-bottom .25s}
-.topnav a:hover{border-bottom:3px solid #fff}.topnav .dropdown-hover a{border-bottom:0}
-.opennav,.closenav{color:inherit}.opennav:hover,.closenav:hover{cursor:pointer;opacity:0.8}
-.btn,.btn-floating,.dropnav a,.btn-floating-large,.btn-block, .navbar a,.navblock a,.sidenav a,.pagination li a,.hoverable tbody tr,.hoverable li,
-.accordion-content a,.dropdown-content a,.dropdown-click:hover,.dropdown-hover:hover,.opennav,.closenav,.closebtn,*[class*="w3-hover-"]
-{-webkit-transition:background-color .25s,color .15s,box-shadow .25s,opacity 0.25s,filter 0.25s,border 0.15s;transition:background-color .25s,color .15s,box-shadow .15s,opacity .25s,filter .25s,border .15s}
-.ripple:active{opacity:0.5}.ripple{-webkit-transition:opacity 0s;transition:opacity 0s}
-.sidenav,.sidebar{height:100%;width:200px;background-color:#fff;position:fixed!important;z-index:1;overflow:auto}
-.sidenav a,.navblock a{padding:4px 2px 4px 16px}.sidenav a:hover,.navblock a:hover{background-color:#ccc;color:#000}.sidenav a,.dropnav a,.navblock a{display:block}
-.sidenav .dropdown-hover:hover,.sidenav .dropdown-hover:first-child,.sidenav .dropdown-click:hover,.dropnav a:hover{background-color:#ccc;color:#000}
-.sidenav .dropdown-hover,.sidenav .dropdown-click,.bar-block .dropdown-hover,.bar-block .dropdown-click{width:100%}
-.sidenav .dropdown-hover .dropdown-content,.sidenav .dropdown-click .dropdown-content,.bar-block .dropdown-hover .dropdown-content,.bar-block .dropdown-click .dropdown-content{min-width:100%}
-.bar-block .dropdown-hover .button,.bar-block .dropdown-click .button{width:100%;text-align:left;background-color:inherit;color:inherit;padding:8px 16px}
-.main,#main{transition:margin-left .4s}
-.modal{z-index:3;display:none;padding-top:100px;position:fixed;left:0;top:0;width:100%;height:100%;overflow:auto;background-color:rgb(0,0,0);background-color:rgba(0,0,0,0.4)}
-.modal-content{margin:auto;background-color:#fff;position:relative;padding:0;outline:0;width:600px}.closebtn{text-decoration:none;float:right;font-size:24px;font-weight:bold;color:inherit}
-.closebtn:hover,.closebtn:focus{color:#000;text-decoration:none;cursor:pointer}
-.pagination{display:inline-block;padding:0;margin:0}.pagination li{display:inline}
-.pagination li a{text-decoration:none;color:#000;float:left;padding:8px 16px}
-.pagination li a:hover{background-color:#ccc}
-.input-group,.group{margin-top:24px;margin-bottom:24px}
-.input{padding:8px;display:block;border:none;border-bottom:1px solid #808080;width:100%}
-.label{color:#009688}.input:not(:valid)~.validate{color:#f44336}
-.select{padding:9px 0;width:100%;color:#000;border:1px solid transparent;border-bottom:1px solid #009688}
-.select select:focus{color:#000;border:1px solid #009688}.select option[disabled]{color:#009688}
-.dropdown-click,.dropdown-hover{position:relative;display:inline-block;cursor:pointer}
-.dropdown-hover:hover .dropdown-content{display:block;z-index:1}
-.dropdown-hover:first-child,.dropdown-click:hover{background-color:#ccc;color:#000}
-.dropdown-hover:hover > .button:first-child,.dropdown-click:hover > .button:first-child{background-color:#ccc;color:#000}
-.dropdown-content{cursor:auto;color:#000;background-color:#fff;display:none;position:absolute;min-width:160px;margin:0;padding:0}
-.dropdown-content a{padding:6px 16px;display:block}
-.dropdown-content a:hover{background-color:#ccc}
-.accordion{width:100%;cursor:pointer}
-.accordion-content{cursor:auto;display:none;position:relative;width:100%;margin:0;padding:0}
-.accordion-content a{padding:6px 16px;display:block}.accordion-content a:hover{background-color:#ccc}
-.progress-container{width:100%;height:1.5em;position:relative;background-color:#f1f1f1}
-.progressbar{background-color:#757575;height:100%;position:absolute;line-height:inherit}
-input[type=checkbox].check,input[type=radio].radio{width:24px;height:24px;position:relative;top:6px}
-input[type=checkbox].check:checked+.validate,input[type=radio].radio:checked+.validate{color:#009688} 
-input[type=checkbox].check:disabled+.validate,input[type=radio].radio:disabled+.validate{color:#aaa}
-.bar{width:100%;overflow:hidden}.center .bar{display:inline-block;width:auto}
-.bar .bar-item{padding:8px 16px;float:left;background-color:inherit;color:inherit;width:auto;border:none;outline:none;display:block}
-.bar .dropdown-hover,.bar .dropdown-click{position:static;float:left}
-.bar .button{background-color:inherit;color:inherit;white-space:normal}
-.bar-block .bar-item{width:100%;display:block;padding:8px 16px;text-align:left;background-color:inherit;color:inherit;border:none;outline:none;white-space:normal;float:none}
-.bar-block.center .bar-item{text-align:center}
-.block{display:block;width:100%}
-.responsive{overflow-x:auto}
-.container:after,.container:before,.panel:after,.panel:before,.row:after,.row:before,.row-padding:after,.row-padding:before,.cell-row:before,.cell-row:after,
-.topnav:after,.topnav:before,.clear:after,.clear:before,.btn-group:before,.btn-group:after,.btn-bar:before,.btn-bar:after,.bar:before,.bar:after
-{content:"";display:table;clear:both}
-.col,.half,.third,.twothird,.threequarter,.quarter{float:left;width:100%}
-.col.s1{width:8.33333%}
-.col.s2{width:16.66666%}
-.col.s3{width:24.99999%}
-.col.s4{width:33.33333%}
-.col.s5{width:41.66666%}
-.col.s6{width:49.99999%}
-.col.s7{width:58.33333%}
-.col.s8{width:66.66666%}
-.col.s9{width:74.99999%}
-.col.s10{width:83.33333%}
-.col.s11{width:91.66666%}
-.col.s12,.half,.third,.twothird,.threequarter,.quarter{width:99.99999%}
-@media (min-width:601px){
-.col.m1{width:8.33333%}
-.col.m2{width:16.66666%}
-.col.m3,.quarter{width:24.99999%}
-.col.m4,.third{width:33.33333%}
-.col.m5{width:41.66666%}
-.col.m6,.half{width:49.99999%}
-.col.m7{width:58.33333%}
-.col.m8,.twothird{width:66.66666%}
-.col.m9,.threequarter{width:74.99999%}
-.col.m10{width:83.33333%}
-.col.m11{width:91.66666%}
-.col.m12{width:99.99999%}}
-@media (min-width:993px){
-.col.l1{width:8.33333%}
-.col.l2{width:16.66666%}
-.col.l3,.quarter{width:24.99999%}
-.col.l4,.third{width:33.33333%}
-.col.l5{width:41.66666%}
-.col.l6,.half{width:49.99999%}
-.col.l7{width:58.33333%}
-.col.l8,.twothird{width:66.66666%}
-.col.l9,.threequarter{width:74.99999%}
-.col.l10{width:83.33333%}
-.col.l11{width:91.66666%}
-.col.l12{width:99.99999%}}
-.content{max-width:980px;margin:auto}
-.rest{overflow:hidden}
-.layout-container,.cell-row{display:table;width:100%}.layout-row{display:table-row}.layout-cell,.layout-col,.cell{display:table-cell}
-.layout-top,.cell-top{vertical-align:top}.layout-middle,.cell-middle{vertical-align:middle}.layout-bottom,.cell-bottom{vertical-align:bottom}
-.hide{display:none!important}.show-block,.show{display:block!important}.show-inline-block{display:inline-block!important}
-@media (max-width:600px){.modal-content{margin:0 10px;width:auto!important}.modal{padding-top:30px}
-.topnav a{display:block}.navbar li:not(.opennav){float:none;width:100%!important}.navbar li.right{float:none!important}
-.topnav .dropdown-hover .dropdown-content,.navbar .dropdown-click .dropdown-content,.navbar .dropdown-hover .dropdown-content,.dropdown-hover.mobile .dropdown-content,.dropdown-click.mobile .dropdown-content{position:relative}	
-.topnav,.navbar{text-align:center}.hide-small{display:none!important}.layout-col,.mobile{display:block;width:100%!important}.bar-item.mobile,.dropdown-hover.mobile,.dropdown-click.mobile{text-align:center}
-.dropdown-hover.mobile,.dropdown-hover.mobile .btn,.dropdown-hover.mobile .button,.dropdown-click.mobile,.dropdown-click.mobile .btn,.dropdown-click.mobile .button{width:100%}}
-@media (max-width:768px){.modal-content{width:500px}.modal{padding-top:50px}}
-@media (min-width:993px){.modal-content{width:900px}.hide-large{display:none!important}.sidenav.collapse,.sidebar.collapse{display:block!important}}
-@media (max-width:992px) and (min-width:601px){.hide-medium{display:none!important}}
-@media (max-width:992px){.sidenav.collapse,.sidebar.collapse{display:none}.main{margin-left:0!important;margin-right:0!important}}
-.top,.bottom{position:fixed;width:100%;z-index:1}.top{top:0}.bottom{bottom:0}
-.overlay{position:fixed;display:none;width:100%;height:100%;top:0;left:0;right:0;bottom:0;background-color:rgba(0,0,0,0.5);z-index:2}
-.left{float:left!important}.right{float:right!important}
-.tiny{font-size:10px!important}.small{font-size:12px!important}
-.medium{font-size:15px!important}.large{font-size:18px!important}
-.xlarge{font-size:24px!important}.xxlarge{font-size:36px!important}
-.xxxlarge{font-size:48px!important}.jumbo{font-size:64px!important}
-.vertical{word-break:break-all;line-height:1;text-align:center;width:0.6em}
-.left-align{text-align:left!important}.right-align{text-align:right!important}
-.justify{text-align:justify!important}.center{text-align:center!important}
-.display-topleft{position:absolute;left:0;top:0}.display-topright{position:absolute;right:0;top:0}
-.display-bottomleft{position:absolute;left:0;bottom:0}.display-bottomright{position:absolute;right:0;bottom:0}
-.display-middle{position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);-ms-transform:translate(-50%,-50%)}
-.display-left{position:absolute;top:50%;left:0%;transform:translate(0%,-50%);-ms-transform:translate(-0%,-50%)}
-.display-right{position:absolute;top:50%;right:0%;transform:translate(0%,-50%);-ms-transform:translate(0%,-50%)}
-.display-topmiddle{position:absolute;left:50%;top:0;transform:translate(-50%,0%);-ms-transform:translate(-50%,0%)}
-.display-bottommiddle{position:absolute;left:50%;bottom:0;transform:translate(-50%,0%);-ms-transform:translate(-50%,0%)}
-.display-container:hover .display-hover{display:block}.display-container:hover span.display-hover{display:inline-block}.display-hover{display:none}
-.display-position{position:absolute}
-.circle{border-radius:50%!important}
-.round-small{border-radius:2px!important}.round,.round-medium{border-radius:4px!important}
-.round-large{border-radius:8px!important}.round-xlarge{border-radius:16px!important}
-.round-xxlarge{border-radius:32px!important}.round-jumbo{border-radius:64px!important}
-.border-0{border:0!important}.border{border:1px solid #ccc!important}
-.border-top{border-top:1px solid #ccc!important}.border-bottom{border-bottom:1px solid #ccc!important}
-.border-left{border-left:1px solid #ccc!important}.border-right{border-right:1px solid #ccc!important}
-.margin{margin:16px!important}.margin-0{margin:0!important}
-.margin-top{margin-top:16px!important}.margin-bottom{margin-bottom:16px!important}
-.margin-left{margin-left:16px!important}.margin-right{margin-right:16px!important}
-.section{margin-top:16px!important;margin-bottom:16px!important}
-.padding-tiny{padding:2px 4px!important}.padding-small{padding:4px 8px!important}
-.padding-medium,.padding,.form{padding:8px 16px!important}
-.padding-large{padding:12px 24px!important}.padding-xlarge{padding:16px 32px!important}
-.padding-xxlarge{padding:24px 48px!important}.padding-jumbo{padding:32px 64px!important}
-.padding-4{padding-top:4px!important;padding-bottom:4px!important}
-.padding-8{padding-top:8px!important;padding-bottom:8px!important}
-.padding-12{padding-top:12px!important;padding-bottom:12px!important}
-.padding-16{padding-top:16px!important;padding-bottom:16px!important}
-.padding-24{padding-top:24px!important;padding-bottom:24px!important}
-.padding-32{padding-top:32px!important;padding-bottom:32px!important}
-.padding-48{padding-top:48px!important;padding-bottom:48px!important}
-.padding-64{padding-top:64px!important;padding-bottom:64px!important}
-.padding-128{padding-top:128px!important;padding-bottom:128px!important}
-.padding-0{padding:0!important}
-.padding-top{padding-top:8px!important}.padding-bottom{padding-bottom:8px!important}
-.padding-left{padding-left:16px!important}.padding-right{padding-right:16px!important}
-.topbar{border-top:6px solid #ccc!important}.bottombar{border-bottom:6px solid #ccc!important}
-.leftbar{border-left:6px solid #ccc!important}.rightbar{border-right:6px solid #ccc!important}
-.row-padding,.row-padding>.half,.row-padding>.third,.row-padding>.twothird,.row-padding>.threequarter,.row-padding>.quarter,.row-padding>.col{padding:0 8px}
-.spin{animation:w3-spin 2s infinite linear;-webkit-animation:w3-spin 2s infinite linear}
-@-webkit-keyframes w3-spin{0%{-webkit-transform:rotate(0deg);transform:rotate(0deg)}100%{-webkit-transform:rotate(359deg);transform:rotate(359deg)}}
-@keyframes w3-spin{0%{-webkit-transform:rotate(0deg);transform:rotate(0deg)}100%{-webkit-transform:rotate(359deg);transform:rotate(359deg)}}
-.container{padding:0.01em 16px}
-.panel{padding:0.01em 16px;margin-top:16px!important;margin-bottom:16px!important}
-.example{background-color:#f1f1f1;padding:0.01em 16px}
-.code,.codespan{font-family:Consolas,"courier new";font-size:16px}
-.code{line-height:1.4;width:auto;background-color:#fff;padding:8px 12px;border-left:4px solid #4CAF50;word-wrap:break-word}
-.codespan{color:crimson;background-color:#f1f1f1;padding-left:4px;padding-right:4px;font-size:110%}
-.example,.code{margin:20px 0}
-.card,.card-2,.example{box-shadow:0 2px 4px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12)!important}
-.card-4,.hover-shadow:hover{box-shadow:0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19)!important}
-.card-8{box-shadow:0 8px 16px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19)!important}
-.card-12{box-shadow:0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19)!important}
-.card-16{box-shadow:0 16px 24px 0 rgba(0,0,0,0.22),0 25px 55px 0 rgba(0,0,0,0.21)!important}
-.card-24{box-shadow:0 24px 24px 0 rgba(0,0,0,0.2),0 40px 77px 0 rgba(0,0,0,0.22)!important}
-.animate-fading{-webkit-animation:fading 10s infinite;animation:fading 10s infinite}
-@-webkit-keyframes fading{0%{opacity:0}50%{opacity:1}100%{opacity:0}}
-@keyframes fading{0%{opacity:0}50%{opacity:1}100%{opacity:0}}
-.animate-opacity{-webkit-animation:opac 0.8s;animation:opac 0.8s}
-@-webkit-keyframes opac{from{opacity:0} to{opacity:1}}
-@keyframes opac{from{opacity:0} to{opacity:1}}
-.animate-top{position:relative;-webkit-animation:animatetop 0.4s;animation:animatetop 0.4s}
-@-webkit-keyframes animatetop{from{top:-300px;opacity:0} to{top:0;opacity:1}}
-@keyframes animatetop{from{top:-300px;opacity:0} to{top:0;opacity:1}}
-.animate-left{position:relative;-webkit-animation:animateleft 0.4s;animation:animateleft 0.4s}
-@-webkit-keyframes animateleft{from{left:-300px;opacity:0} to{left:0;opacity:1}}
-@keyframes animateleft{from{left:-300px;opacity:0} to{left:0;opacity:1}}
-.animate-right{position:relative;-webkit-animation:animateright 0.4s;animation:animateright 0.4s}
-@-webkit-keyframes animateright{from{right:-300px;opacity:0} to{right:0;opacity:1}}
-@keyframes animateright{from{right:-300px;opacity:0} to{right:0;opacity:1}}
-.animate-bottom{position:relative;-webkit-animation:animatebottom 0.4s;animation:animatebottom 0.4s}
-@-webkit-keyframes animatebottom{from{bottom:-300px;opacity:0} to{bottom:0px;opacity:1}}
-@keyframes animatebottom{from{bottom:-300px;opacity:0} to{bottom:0;opacity:1}}
-.animate-zoom {-webkit-animation:animatezoom 0.6s;animation:animatezoom 0.6s}
-@-webkit-keyframes animatezoom{from{-webkit-transform:scale(0)} to{-webkit-transform:scale(1)}}
-@keyframes animatezoom{from{transform:scale(0)} to{transform:scale(1)}}
-.animate-input{-webkit-transition:width 0.4s ease-in-out;transition:width 0.4s ease-in-out}.animate-input:focus{width:100%!important}
-.opacity,.hover-opacity:hover{opacity:0.60;-webkit-backface-visibility:hidden}
-.opacity-off,.hover-opacity-off:hover{opacity:1;-webkit-backface-visibility:hidden}
-.opacity-max{opacity:0.25;-webkit-backface-visibility:hidden}
-.opacity-min{opacity:0.75;-webkit-backface-visibility:hidden}
-.greyscale-max,.grayscale-max,.hover-greyscale:hover,.hover-grayscale:hover{-webkit-filter:grayscale(100%);filter:grayscale(100%)}
-.greyscale,.grayscale{-webkit-filter:grayscale(75%);filter:grayscale(75%)}
-.greyscale-min,.grayscale-min{-webkit-filter:grayscale(50%);filter:grayscale(50%)}
-.sepia{-webkit-filter:sepia(75%);filter:sepia(75%)}
-.sepia-max,.hover-sepia:hover{-webkit-filter:sepia(100%);filter:sepia(100%)}
-.sepia-min{-webkit-filter:sepia(50%);filter:sepia(50%)}
-.text-shadow{text-shadow:1px 1px 0 #444}.text-shadow-white{text-shadow:1px 1px 0 #ddd}
-.transparent{background-color:transparent!important}
-.hover-none:hover{box-shadow:none!important;background-color:transparent!important}
-/* Colors */
-.amber,.hover-amber:hover{color:#000!important;background-color:#ffc107!important}
-.aqua,.hover-aqua:hover{color:#000!important;background-color:#00ffff!important}
-.blue,.hover-blue:hover{color:#fff!important;background-color:#2196F3!important}
-.light-blue,.hover-light-blue:hover{color:#000!important;background-color:#87CEEB!important}
-.brown,.hover-brown:hover{color:#fff!important;background-color:#795548!important}
-.cyan,.hover-cyan:hover{color:#000!important;background-color:#00bcd4!important}
-.blue-grey,.hover-blue-grey:hover,.blue-gray,.hover-blue-gray:hover{color:#fff!important;background-color:#607d8b!important}
-.green,.hover-green:hover{color:#fff!important;background-color:#4CAF50!important}
-.light-green,.hover-light-green:hover{color:#000!important;background-color:#8bc34a!important}
-.indigo,.hover-indigo:hover{color:#fff!important;background-color:#3f51b5!important}
-.khaki,.hover-khaki:hover{color:#000!important;background-color:#f0e68c!important}
-.lime,.hover-lime:hover{color:#000!important;background-color:#cddc39!important}
-.orange,.hover-orange:hover{color:#000!important;background-color:#ff9800!important}
-.deep-orange,.hover-deep-orange:hover{color:#fff!important;background-color:#ff5722!important}
-.pink,.hover-pink:hover{color:#fff!important;background-color:#e91e63!important}
-.purple,.hover-purple:hover{color:#fff!important;background-color:#9c27b0!important}
-.deep-purple,.hover-deep-purple:hover{color:#fff!important;background-color:#673ab7!important}
-.red,.hover-red:hover{color:#fff!important;background-color:#f44336!important}
-.sand,.hover-sand:hover{color:#000!important;background-color:#fdf5e6!important}
-.teal,.hover-teal:hover{color:#fff!important;background-color:#009688!important}
-.yellow,.hover-yellow:hover{color:#000!important;background-color:#ffeb3b!important}
-.white,.hover-white:hover{color:#000!important;background-color:#fff!important}
-.black,.hover-black:hover{color:#fff!important;background-color:#000!important}
-.grey,.hover-grey:hover,.gray,.hover-gray:hover{color:#000!important;background-color:#9e9e9e!important}
-.light-grey,.hover-light-grey:hover,.light-gray,.hover-light-gray:hover{color:#000!important;background-color:#f1f1f1!important}
-.dark-grey,.hover-dark-grey:hover,.dark-gray,.hover-dark-gray:hover{color:#fff!important;background-color:#616161!important}
-.pale-red,.hover-pale-red:hover{color:#000!important;background-color:#ffdddd!important}
-.pale-green,.hover-pale-green:hover{color:#000!important;background-color:#ddffdd!important}
-.pale-yellow,.hover-pale-yellow:hover{color:#000!important;background-color:#ffffcc!important}
-.pale-blue,.hover-pale-blue:hover{color:#000!important;background-color:#ddffff!important}
-.text-amber,.hover-text-amber:hover{color:#ffc107!important}
-.text-aqua,.hover-text-aqua:hover{color:#00ffff!important}
-.text-blue,.hover-text-blue:hover{color:#2196F3!important}
-.text-light-blue,.hover-text-light-blue:hover{color:#87CEEB!important}
-.text-brown,.hover-text-brown:hover{color:#795548!important}
-.text-cyan,.hover-text-cyan:hover{color:#00bcd4!important}
-.text-blue-grey,.hover-text-blue-grey:hover,.text-blue-gray,.hover-text-blue-gray:hover{color:#607d8b!important}
-.text-green,.hover-text-green:hover{color:#4CAF50!important}
-.text-light-green,.hover-text-light-green:hover{color:#8bc34a!important}
-.text-indigo,.hover-text-indigo:hover{color:#3f51b5!important}
-.text-khaki,.hover-text-khaki:hover{color:#b4aa50!important}
-.text-lime,.hover-text-lime:hover{color:#cddc39!important}
-.text-orange,.hover-text-orange:hover{color:#ff9800!important}
-.text-deep-orange,.hover-text-deep-orange:hover{color:#ff5722!important}
-.text-pink,.hover-text-pink:hover{color:#e91e63!important}
-.text-purple,.hover-text-purple:hover{color:#9c27b0!important}
-.text-deep-purple,.hover-text-deep-purple:hover{color:#673ab7!important}
-.text-red,.hover-text-red:hover{color:#f44336!important}
-.text-sand,.hover-text-sand:hover{color:#fdf5e6!important}
-.text-teal,.hover-text-teal:hover{color:#009688!important}
-.text-yellow,.hover-text-yellow:hover{color:#d2be0e!important}
-.text-white,.hover-text-white:hover{color:#fff!important}
-.text-black,.hover-text-black:hover{color:#000!important}
-.text-grey,.hover-text-grey:hover,.text-gray,.hover-text-gray:hover{color:#757575!important}
-.text-light-grey,.hover-text-light-grey:hover,.text-light-gray,.hover-text-light-gray:hover{color:#f1f1f1!important}
-.text-dark-grey,.hover-text-dark-grey:hover,.text-dark-gray,.hover-text-dark-gray:hover{color:#3a3a3a!important}
-.border-amber,.hover-border-amber:hover{border-color:#ffc107!important}
-.border-aqua,.hover-border-aqua:hover{border-color:#00ffff!important}
-.border-blue,.hover-border-blue:hover{border-color:#2196F3!important}
-.border-light-blue,.hover-border-light-blue:hover{border-color:#87CEEB!important}
-.border-brown,.hover-border-brown:hover{border-color:#795548!important}
-.border-cyan,.hover-border-cyan:hover{border-color:#00bcd4!important}
-.border-blue-grey,.hover-border-blue-grey:hover,.border-blue-gray,.hover-border-blue-gray:hover{border-color:#607d8b!important}
-.border-green,.hover-border-green:hover{border-color:#4CAF50!important}
-.border-light-green,.hover-border-light-green:hover{border-color:#8bc34a!important}
-.border-indigo,.hover-border-indigo:hover{border-color:#3f51b5!important}
-.border-khaki,.hover-border-khaki:hover{border-color:#f0e68c!important}
-.border-lime,.hover-border-lime:hover{border-color:#cddc39!important}
-.border-orange,.hover-border-orange:hover{border-color:#ff9800!important}
-.border-deep-orange,.hover-border-deep-orange:hover{border-color:#ff5722!important}
-.border-pink,.hover-border-pink:hover{border-color:#e91e63!important}
-.border-purple,.hover-border-purple:hover{border-color:#9c27b0!important}
-.border-deep-purple,.hover-border-deep-purple:hover{border-color:#673ab7!important}
-.border-red,.hover-border-red:hover{border-color:#f44336!important}
-.border-sand,.hover-border-sand:hover{border-color:#fdf5e6!important}
-.border-teal,.hover-border-teal:hover{border-color:#009688!important}
-.border-yellow,.hover-border-yellow:hover{border-color:#ffeb3b!important}
-.border-white,.hover-border-white:hover{border-color:#fff!important}
-.border-black,.hover-border-black:hover{border-color:#000!important}
-.border-grey,.hover-border-grey:hover,.border-gray,.hover-border-gray:hover{border-color:#9e9e9e!important}
-.border-light-grey,.hover-border-light-grey:hover,.border-light-gray,.hover-border-light-gray:hover{border-color:#f1f1f1!important}
-.border-dark-grey,.hover-border-dark-grey:hover,.border-dark-gray,.hover-border-dark-gray:hover{border-color:#616161!important}
-.border-pale-red,.hover-border-pale-red:hover{border-color:#ffe7e7!important}.border-pale-green,.hover-border-pale-green:hover{border-color:#e7ffe7!important}
-.border-pale-yellow,.hover-border-pale-yellow:hover{border-color:#ffffcc!important}.border-pale-blue,.hover-border-pale-blue:hover{border-color:#e7ffff!important}
+</style>
+<style>
+body {font-family: "Lato", sans-serif}
+.mySlides {display: none}
 </style>
 <style>
 html, body {
   height: 100%;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
   font-style:normal;
-  font-size: 12px;
+  font-size:12px;
   background-color: #f1f1f1;
 }
 
@@ -383,7 +28,7 @@ a {
   text-decoration: none;
 }
 a:hover {
-  text-decoration: underline;
+  text-decoration: none;
 }
 
 .parallax [class*="bg__"] {
@@ -427,77 +72,232 @@ a:hover {
 }
 
 </style>
-<!-- Navigation -->
-<nav class="bar black">
-  <a href="#home" class="button bar-item"><b>Pretended Studio</b></a>
-  <a href="#band" class="button bar-item">Support</a>
-  <a href="#tour" class="button bar-item">Terms</a>
-  <a href="#contact" class="button bar-item">Contact</a>
-</nav>
+
+<style>
+/* Full height image header */
+.bgimg-1 {
+  background-position: center;
+  background-size: cover;
+  background-image: url("https://www.w3schools.com/w3images/mac.jpg");
+  min-height: 100%;
+}
+</style>
+
+<body>
+
+<!-- Navbar (sit on top) -->
+<div class="w3-top">
+  <div class="w3-bar" id="myNavbar">
+    <a class="w3-bar-item w3-button w3-hover-black w3-hide-medium w3-hide-large w3-right" href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
+      <i class="fa fa-bars"></i>
+    </a>
+    <a href="#home" class="w3-bar-item w3-button"><b>Pretended Studio</b></a>
+    <a href="#about" class="w3-bar-item w3-button w3-hide-small">Support</a>
+    <a href="#portfolio" class="w3-bar-item w3-button w3-hide-small">Categories</a>
+    <a href="#contact" class="w3-bar-item w3-button w3-hide-small">License</a>
+    <a href="#" class="w3-bar-item w3-button w3-hide-small w3-right w3-hover-red">
+      <i class="fa fa-search"></i>
+    </a>
+  </div>
+
+  <!-- Navbar on small screens -->
+  <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium">
+    <a href="#about" class="w3-bar-item w3-button" onclick="toggleFunction()">ABOUT</a>
+    <a href="#portfolio" class="w3-bar-item w3-button" onclick="toggleFunction()">PORTFOLIO</a>
+    <a href="#contact" class="w3-bar-item w3-button" onclick="toggleFunction()">CONTACT</a>
+    <a href="#" class="w3-bar-item w3-button">SEARCH</a>
+  </div>
+</div>
+
+<header class="bgimg-1 w3-display-container w3-grayscale-min" id="home">
+  <div class="w3-display-left w3-text-white" style="padding:48px">
+    <span class="w3-jumbo w3-hide-small">Something matters</span><br>
+    <span class="w3-xxlarge w3-hide-large w3-hide-medium">Start something that matters</span><br>
+    <span class="w3-large">Stop wasting valuable time with projects that just isn't you.</span>
+    <p><a href="#about" class="w3-button w3-white w3-padding-large w3-large w3-margin-top w3-opacity w3-hover-opacity-off">Learn more and start today</a></p>
+  </div> 
+  <div class="w3-display-bottomleft w3-text-grey w3-large" style="padding:24px 48px">
+    <i class="fab fa-facebook w3-hover-opacity"></i>
+    <i class="fab fa-instagram w3-hover-opacity"></i>
+    <i class="fab fa-youtube w3-hover-opacity"></i>
+    <i class="fab fa-pinterest-p w3-hover-opacity"></i>
+    <i class="fab fa-twitter w3-hover-opacity"></i>
+    <i class="fab fa-linkedin w3-hover-opacity"></i>
+  </div>
+</header>
+
 <!-- Parallax -->
 <div class="parallax">
     <div class="bg__foo">foo</div>
     <div class="bg__bar">bar</div>
 </div>
-<!-- Band Description -->
-<section class="container center content" style="max-width:600px">
-  <h2 class="wide">3D ASSETS</h2>
-  <p class="opacity"><i>Public Domain Models</i></p>
-  <p class="justify">We have created a fictional band website. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-</section>
-<!-- Slide Show -->
-<section>
-  <img class="mySlides" src="https://www.w3schools.com/howto/img_band_la.jpg"
-  style="width:100%">
-  <img class="mySlides" src="https://www.w3schools.com/howto/img_band_ny.jpg"
-  style="width:100%">
-  <img class="mySlides" src="https://www.w3schools.com/howto/img_band_chicago.jpg"
-  style="width:100%">
-</section>
+  <!-- The Band Section -->
+  <div class="w3-container w3-content w3-center w3-padding-64" style="max-width:800px" id="band">
+    <h2 class="w3-wide">THE BAND</h2>
+    <p class="w3-opacity"><i>We love music</i></p>
+    <p class="w3-justify">We have created a fictional band website. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+      ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur
+      adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
 
-<!-- Band Description -->
-<section class="container center content" style="max-width:600px">
-  <h2 class="wide">WORKS ON</h2>
-  <p class="opacity"><i>Short Animation Series</i></p>
-  <p class="justify">We have created a fictional band website. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-</section>
+  </div>
 
-<!-- Band Members -->
-<section class="row-padding center w3-light-grey">
-  <article class="third">
-    <p>John</p>
-    <img src="https://www.w3schools.com/howto/img_bandmember.jpg" alt="Random Name" style="width:100%">
-    <p>John is the smartest.</p>
-  </article>
-  <article class="third">
-    <p>Paul</p>
-    <img src="https://www.w3schools.com/howto/img_bandmember.jpg" alt="Random Name" style="width:100%">
-    <p>Paul is the prettiest.</p>
-  </article>
-  <article class="third">
-    <p>Ringo</p>
-    <img src="https://www.w3schools.com/howto/img_bandmember.jpg" alt="Random Name" style="width:100%">
-    <p>Ringo is the funniest.</p>
-  </article>
-</section>
+  <!-- Automatic Slideshow Images -->
+  <div class="mySlides w3-display-container w3-center">
+    <img src="https://www.w3schools.com/w3images/la.jpg" style="width:100%">
+    <div class="w3-display-bottommiddle w3-container w3-text-white w3-padding-32 w3-hide-small">
+      <h3>Los Angeles</h3>
+      <p><b>We had the best time playing at Venice Beach!</b></p>   
+    </div>
+  </div>
+  <div class="mySlides w3-display-container w3-center">
+    <img src="https://www.w3schools.com/w3images/ny.jpg" style="width:100%">
+    <div class="w3-display-bottommiddle w3-container w3-text-white w3-padding-32 w3-hide-small">
+      <h3>New York</h3>
+      <p><b>The atmosphere in New York is lorem ipsum.</b></p>    
+    </div>
+  </div>
+  <div class="mySlides w3-display-container w3-center">
+    <img src="https://www.w3schools.com/w3images/chicago.jpg" style="width:100%">
+    <div class="w3-display-bottommiddle w3-container w3-text-white w3-padding-32 w3-hide-small">
+      <h3>Chicago</h3>
+      <p><b>Thank you, Chicago - A night we won't forget.</b></p>    
+    </div>
+  </div>
+
+  <!-- The Band Section -->
+  <div class="w3-container w3-content w3-center w3-padding-64" style="max-width:800px" id="band">
+    <h2 class="w3-wide">THE BAND</h2>
+    <p class="w3-opacity"><i>We love music</i></p>
+    <p class="w3-justify">We have created a fictional band website. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+      ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur
+      adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+    <div class="w3-row w3-padding-32">
+      <div class="w3-third">
+        <p>Name</p>
+        <img src="https://www.w3schools.com/w3images/bandmember.jpg" class="w3-round w3-margin-bottom" alt="Random Name" style="width:60%">
+      </div>
+      <div class="w3-third">
+        <p>Name</p>
+        <img src="https://www.w3schools.com/w3images/bandmember.jpg" class="w3-round w3-margin-bottom" alt="Random Name" style="width:60%">
+      </div>
+      <div class="w3-third">
+        <p>Name</p>
+        <img src="https://www.w3schools.com/w3images/bandmember.jpg" class="w3-round" alt="Random Name" style="width:60%">
+      </div>
+    </div>
+  </div>
+
+  <!-- The Tour Section -->
+  <div class="w3-black" id="tour">
+    <div class="w3-container w3-content w3-padding-64" style="max-width:800px">
+      <h2 class="w3-wide w3-center">TOUR DATES</h2>
+      <p class="w3-opacity w3-center"><i>Remember to book your tickets!</i></p><br>
+
+      <ul class="w3-ul w3-border w3-white w3-text-grey">
+        <li class="w3-padding">September <span class="w3-tag w3-red w3-margin-left">Sold out</span></li>
+        <li class="w3-padding">October <span class="w3-tag w3-red w3-margin-left">Sold out</span></li>
+        <li class="w3-padding">November <span class="w3-badge w3-right w3-margin-right">3</span></li>
+      </ul>
+
+      <div class="w3-row-padding w3-padding-32" style="margin:0 -16px">
+        <div class="w3-third w3-margin-bottom">
+          <img src="https://www.w3schools.com/w3images/newyork.jpg" alt="New York" style="width:100%" class="w3-hover-opacity">
+          <div class="w3-container w3-white">
+            <p><b>New York</b></p>
+            <p class="w3-opacity">Fri 27 Nov 2016</p>
+            <p>Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
+            <button class="w3-button w3-black w3-margin-bottom" onclick="document.getElementById('ticketModal').style.display='block'">Buy Tickets</button>
+          </div>
+        </div>
+        <div class="w3-third w3-margin-bottom">
+          <img src="https://www.w3schools.com/w3images/paris.jpg" alt="Paris" style="width:100%" class="w3-hover-opacity">
+          <div class="w3-container w3-white">
+            <p><b>Paris</b></p>
+            <p class="w3-opacity">Sat 28 Nov 2016</p>
+            <p>Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
+            <button class="w3-button w3-black w3-margin-bottom" onclick="document.getElementById('ticketModal').style.display='block'">Buy Tickets</button>
+          </div>
+        </div>
+        <div class="w3-third w3-margin-bottom">
+          <img src="https://www.w3schools.com/w3images/sanfran.jpg" alt="San Francisco" style="width:100%" class="w3-hover-opacity">
+          <div class="w3-container w3-white">
+            <p><b>San Francisco</b></p>
+            <p class="w3-opacity">Sun 29 Nov 2016</p>
+            <p>Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
+            <button class="w3-button w3-black w3-margin-bottom" onclick="document.getElementById('ticketModal').style.display='block'">Buy Tickets</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Ticket Modal -->
+  <div id="ticketModal" class="w3-modal">
+    <div class="w3-modal-content w3-animate-top w3-card-4">
+      <header class="w3-container w3-teal w3-center w3-padding-32"> 
+        <span onclick="document.getElementById('ticketModal').style.display='none'" 
+       class="w3-button w3-teal w3-xlarge w3-display-topright">×</span>
+        <h2 class="w3-wide"><i class="fa fa-suitcase w3-margin-right"></i>Tickets</h2>
+      </header>
+      <div class="w3-container">
+        <p><label><i class="fa fa-shopping-cart"></i> Tickets, $15 per person</label></p>
+        <input class="w3-input w3-border" type="text" placeholder="How many?">
+        <p><label><i class="fa fa-user"></i> Send To</label></p>
+        <input class="w3-input w3-border" type="text" placeholder="Enter email">
+        <button class="w3-button w3-block w3-teal w3-padding-16 w3-section w3-right">PAY <i class="fa fa-check"></i></button>
+        <button class="w3-button w3-red w3-section" onclick="document.getElementById('ticketModal').style.display='none'">Close <i class="fa fa-remove"></i></button>
+        <p class="w3-right">Need <a href="#" class="w3-text-blue">help?</a></p>
+      </div>
+    </div>
+  </div>
+
+  <!-- The Contact Section -->
+  <div class="w3-container w3-content w3-padding-64" style="max-width:800px" id="contact">
+    <h2 class="w3-wide w3-center">CONTACT</h2>
+    <p class="w3-opacity w3-center"><i>Fan? Drop a note!</i></p>
+    <div class="w3-row w3-padding-32">
+      <div class="w3-col m6 w3-large w3-margin-bottom">
+        <i class="fa fa-map-marker" style="width:30px"></i> Chicago, US<br>
+        <i class="fa fa-phone" style="width:30px"></i> Phone: +00 151515<br>
+        <i class="fa fa-envelope" style="width:30px"> </i> Email: mail@mail.com<br>
+      </div>
+      <div class="w3-col m6">
+        <form action="/action_page.php" target="_blank">
+          <div class="w3-row-padding" style="margin:0 -16px 8px -16px">
+            <div class="w3-half">
+              <input class="w3-input w3-border" type="text" placeholder="Name" required name="Name">
+            </div>
+            <div class="w3-half">
+              <input class="w3-input w3-border" type="text" placeholder="Email" required name="Email">
+            </div>
+          </div>
+          <input class="w3-input w3-border" type="text" placeholder="Message" required name="Message">
+          <button class="w3-button w3-black w3-section w3-right" type="submit">SEND</button>
+        </form>
+      </div>
+    </div>
+  </div>
+  
+<!-- End Page Content -->
+</div>
+
+<!-- Image of location/map -->
+<img src="https://www.w3schools.com/w3images/map.jpg" class="w3-image w3-greyscale-min" style="width:100%">
 
 <!-- Footer -->
-<footer class="container padding-64 center black xlarge">
-  <a href="#"><i class="fab  fa-facebook"></i></a>
-  <a href="#"><i class="fab  fa-pinterest-p"></i></a>
-  <a href="#"><i class="fab  fa-twitter"></i></a>
-  <a href="#"><i class="fab  fa-instagram"></i></a>
-  <a href="#"><i class="fab  fa-linkedin"></i></a>
-  <a href="#"><i class="fab  fa-github"></i></a>
-  <a href="#"><i class="fab  fa-patreon"></i></a>
-  <a href="#"><i class="fab  fa-paypal"></i></a>
-  <p class="medium">
-  &copy; 2021 <a href="#" target="_blank">Pretended Studio</a>
-  </p>
+<footer class="w3-container w3-padding-64 w3-center w3-opacity w3-light-grey w3-xlarge">
+  <i class="fab fa-facebook w3-hover-opacity"></i>
+  <i class="fab fa-instagram w3-hover-opacity"></i>
+  <i class="fab fa-twitter w3-hover-opacity"></i>
+  <i class="fab fa-linkedin w3-hover-opacity"></i>
+  <i class="fab fa-github w3-hover-opacity"></i>
+  <i class="fab fa-pinterest w3-hover-opacity"></i>
+  <i class="fab fa-paypal w3-hover-opacity"></i>
+  <p class="w3-medium">&copy; 2021 Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
 </footer>
 
 <script>
-// Automatic Slideshow - change image every 3 seconds
+// Automatic Slideshow - change image every 4 seconds
 var myIndex = 0;
 carousel();
 
@@ -505,15 +305,63 @@ function carousel() {
   var i;
   var x = document.getElementsByClassName("mySlides");
   for (i = 0; i < x.length; i++) {
-    x[i].style.display = "none";
+    x[i].style.display = "none";  
   }
   myIndex++;
-  if (myIndex > x.length) {myIndex = 1}
-  x[myIndex-1].style.display = "block";
-  setTimeout(carousel, 3000);
+  if (myIndex > x.length) {myIndex = 1}    
+  x[myIndex-1].style.display = "block";  
+  setTimeout(carousel, 4000);    
+}
+
+// Used to toggle the menu on small screens when clicking on the menu button
+function myFunction() {
+  var x = document.getElementById("navDemo");
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+  } else { 
+    x.className = x.className.replace(" w3-show", "");
+  }
+}
+
+// When the user clicks anywhere outside of the modal, close it
+var modal = document.getElementById('ticketModal');
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+</script>
+
+<script>
+// Modal Image Gallery
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
+
+// Change style of navbar on scroll
+window.onscroll = function() {myFunction()};
+function myFunction() {
+    var navbar = document.getElementById("myNavbar");
+    if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+        navbar.className = "w3-bar" + " w3-card" + " w3-animate-top" + " w3-white";
+    } else {
+        navbar.className = navbar.className.replace(" w3-card w3-animate-top w3-white", "");
+    }
+}
+
+// Used to toggle the menu on small screens when clicking on the menu button
+function toggleFunction() {
+    var x = document.getElementById("navDemo");
+    if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+    } else {
+        x.className = x.className.replace(" w3-show", "");
+    }
 }
 </script>
 
 </body>
 </html>
-
