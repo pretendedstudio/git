@@ -26,5 +26,4 @@ hdri: "No"
 imagetexture: ".jpg"
 environment: ".hdr"
 notice: "-"
-permalink: /3d-models/:title
 ---
