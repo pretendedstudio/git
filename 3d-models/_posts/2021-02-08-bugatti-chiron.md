@@ -1,5 +1,6 @@
 ---
 title:  "Bugatti Chiron 2016"
+permalink: /3d-models/:title
 metadate: "hide"
 categories: [ Vehicle ]
 tags: [ supercar ]
