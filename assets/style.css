@@ -134,3 +134,12 @@ article section.parallax {
   width:100%;
   margin: 0;
 }
+/* Scrollbar Chrome */
+html {scrollbar-width: thin; scrollbar-color: #888 #333;}
+/* Scrollbar Firefox */
+::-webkit-scrollbar {width: 2px;height: 2px;}
+::-webkit-scrollbar-track {background: #333;}
+::-webkit-scrollbar-thumb {background: #888;border-radius: 12px; margin: 0px auto;}
+::-webkit-scrollbar-thumb:hover {background: #666;}
+::-webkit-scrollbar-corner {background: red;}
+::-webkit-scrollbar-track-piece {background: #333;}
