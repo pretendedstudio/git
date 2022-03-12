@@ -92,10 +92,10 @@ a:hover {
 }
 
 .button {
-text-align:center;color:#fff;background-color:#008b8b;border:none;cursor:pointer;padding:0px 25px 0px 25px;
+text-align:center;color:#fff;background-color:#008b8b;border:none;cursor:pointer;padding:5px 25px 5px 25px;
 }
 .button:hover {
-text-align:center;color:#fff;background-color:#007c7c;border:none;cursor:pointer;padding:0px 25px 0px 25px;
+text-align:center;color:#fff;background-color:#007c7c;border:none;cursor:pointer;padding:5px 25px 5px 25px;
 }
 
 article .container {
