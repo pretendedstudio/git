@@ -198,6 +198,14 @@ function rubber_ducky_obj(){window.open('https://github.com/cc03d/archive/raw/ma
 function rubber_ducky_3ds(){window.open('https://github.com/cc03d/archive/raw/main/rubber-ducky-3ds.zip');}
 function rubber_ducky_dae(){window.open('https://github.com/cc03d/archive/raw/main/rubber-ducky-dae.zip');}
 function rubber_ducky_stl(){window.open('https://github.com/cc03d/archive/raw/main/rubber-ducky-stl.zip');}
+
+function disaar_sunscreen_blend(){window.open('https://github.com/cc03d/archive/raw/main/disaar-sunscreen.zip');}
+function disaar_sunscreen_fbx(){window.open('https://github.com/cc03d/archive/raw/main/disaar-sunscreen-fbx.zip');}
+function disaar_sunscreen_obj(){window.open('https://github.com/cc03d/archive/raw/main/disaar-sunscreen-obj.zip');}
+function disaar_sunscreen_3ds(){window.open('https://github.com/cc03d/archive/raw/main/disaar-sunscreen-3ds.zip');}
+function disaar_sunscreen_dae(){window.open('https://github.com/cc03d/archive/raw/main/disaar-sunscreen-dae.zip');}
+function disaar_sunscreen_stl(){window.open('https://github.com/cc03d/archive/raw/main/disaar-sunscreen-stl.zip');}
+
 function _blend(){window.open('https://github.com/cc03d/archive/raw/main/.zip');}
 function _fbx(){window.open('https://github.com/cc03d/archive/raw/main/.zip');}
 function _obj(){window.open('https://github.com/cc03d/archive/raw/main/.zip');}
