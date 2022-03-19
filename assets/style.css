@@ -22,20 +22,20 @@ h1,h2,h3,h4,h5,h6{font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Ro
   height: 100vh;
 }
 .parallax .bg__foo {
-  background-image: url(/assets/img/parallax1.jpg);
+  background-image: url(https://pretendedstudio.com/assets/img/parallax1.jpg);
 }
 .parallax .bg__bar {
-  background-image: url(/assets/img/parallax2.jpg);
+  background-image: url(https://pretendedstudio.com/assets/img/parallax2.jpg);
 }
 .parallax .bg__baz {
-  background-image: url(/assets/img/parallax3.jpg);
+  background-image: url(https://pretendedstudio.com/assets/img/parallax3.jpg);
 }
 .parallax .bg__bazz {
-  background-image: url(/assets/img/parallax1.jpg);
+  background-image: url(https://pretendedstudio.com/assets/img/parallax1.jpg);
 }
 .parallax .bg__break {
   box-shadow: inset 0 0 1em #111;
-  background-image: url(/assets/img/parallax1.jpg);
+  background-image: url(https://pretendedstudio.com/assets/img/parallax1.jpg);
 }
 .parallax .capture {
   float: right;
