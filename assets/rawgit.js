@@ -657,6 +657,7 @@ function _hdri(){window.open('https://hdrihaven.com/hdri/?h=');}
 function texture_license(){window.open('https://help.ambientcg.com/doku.php?id=website:license');}
 function wood032_texture(){window.open('https://ambientcg.com/view?id=Wood032');}
 function fabric004_texture(){window.open('https://ambientcg.com/view?id=Fabric004');}
+function fabric019_texture(){window.open('https://ambientcg.com/view?id=Fabric019');}
 function candy003_texture(){window.open('https://ambientcg.com/view?id=Candy003');}
 function apple001_texture(){window.open('https://ambientcg.com/view?id=3DApple001');}
 function apple002_texture(){window.open('https://ambientcg.com/view?id=3DApple002');}
