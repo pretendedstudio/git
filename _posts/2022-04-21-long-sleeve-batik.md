@@ -2,7 +2,7 @@
 title:  "Long Sleeve Batik"
 metadate: "hide"
 categories: [ Fashion ]
-tags: [ accessories ]
+tags: [ cloth ]
 image: "/assets/images/long-sleeve-batik.jpg"
 object: "Long Sleeve Batik"
 geometry: "Subdivision-ready"
