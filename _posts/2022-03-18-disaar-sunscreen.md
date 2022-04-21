@@ -1,7 +1,7 @@
 ---
 title:  "Disaar Sunscreen"
 metadate: "hide"
-categories: [ Cosmetic ]
+categories: [ Fashion ]
 tags: [ makeup ]
 image: "/assets/images/disaar-sunscreen.jpg"
 object: "Disaar Sunscreen"
