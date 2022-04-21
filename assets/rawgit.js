@@ -204,6 +204,12 @@ function disaar_sunscreen_obj(){window.open('https://github.com/cc03d/archive/ra
 function disaar_sunscreen_3ds(){window.open('https://github.com/cc03d/archive/raw/main/disaar-sunscreen-3ds.zip');}
 function disaar_sunscreen_dae(){window.open('https://github.com/cc03d/archive/raw/main/disaar-sunscreen-dae.zip');}
 function disaar_sunscreen_stl(){window.open('https://github.com/cc03d/archive/raw/main/disaar-sunscreen-stl.zip');}
+function long_sleeve_batik_blend(){window.open('https://github.com/cc03d/archive/raw/main/long-sleeve-batik.zip');}
+function long_sleeve_batik_fbx(){window.open('https://github.com/cc03d/archive/raw/main/long-sleeve-batik-fbx.zip');}
+function long_sleeve_batik_obj(){window.open('https://github.com/cc03d/archive/raw/main/long-sleeve-batik-obj.zip');}
+function long_sleeve_batik_3ds(){window.open('https://github.com/cc03d/archive/raw/main/long-sleeve-batik-3ds.zip');}
+function long_sleeve_batik_dae(){window.open('https://github.com/cc03d/archive/raw/main/long-sleeve-batik-dae.zip');}
+function long_sleeve_batik_stl(){window.open('https://github.com/cc03d/archive/raw/main/long-sleeve-batik-stl.zip');}
 function _blend(){window.open('https://github.com/cc03d/archive/raw/main/.zip');}
 function _fbx(){window.open('https://github.com/cc03d/archive/raw/main/.zip');}
 function _obj(){window.open('https://github.com/cc03d/archive/raw/main/.zip');}
