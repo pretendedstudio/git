@@ -2,7 +2,7 @@
 title:  "Retro Sunglasses"
 metadate: "hide"
 categories: [ Fashion ]
-tags: [ accessories ]
+tags: [ accessory ]
 image: "/assets/images/retro-sunglasses.jpg"
 object: "Retro Sunglasses"
 geometry: "Subdivision-ready"
