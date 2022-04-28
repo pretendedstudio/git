@@ -2,7 +2,7 @@
 title:  "Hydro Coco"
 metadate: "hide"
 categories: [ Food ]
-tags: [ drink ]
+tags: [ "softdrink", "drink" ]
 image: "/assets/images/hydro-coco.jpg"
 object: "Hydro Coco"
 geometry: "Subdivision-ready"
