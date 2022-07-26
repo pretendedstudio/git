@@ -126,11 +126,22 @@ article h1, article h2 {
 article section {
   padding: 3em;
 }
+article section.main {
+  background-position:center;
+  background-size:cover;
+  background-image:url("https://cg3d.org/assets/images/gallery/inside-garage.jpg");
+  min-height:100%;
+}
 article section.parallax {
   margin: 0;
   padding: 0;
 }
-
+article section.footer {
+  background-position:center;
+  background-size:cover;
+  background-image:url("https://cg3d.org/assets/images/gallery/koenigsegg-agera-rs.jpg");
+  min-height:100%;
+}
 #frame {
   width:100%;
   margin: 0;
